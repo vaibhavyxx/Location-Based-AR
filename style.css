@@ -1,0 +1,10 @@
+#music {
+    color: pink;
+    background: purple;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

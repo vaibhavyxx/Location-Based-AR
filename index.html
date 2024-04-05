@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+</head>
+<body style='margin: 0; overflow: hidden;'>
+    <button id="music">click me</button>
+    <a-scene
+        vr-mode-ui="enabled: false"
+		embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <a-asset-item id="radio" src="old_radio.glb"></a-asset-item>
+        <a-entity material='color: red' geometry='primitive: box' scale="10 10 10"rotation="0 180 0" position="0 30 0" gps-new-entity-place="longitude: -77.67673; latitude: 43.08421;"></a-entity>
+	</a-scene>
+</body>
+
+</html>
